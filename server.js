@@ -17,7 +17,7 @@ app.use(cors({
   crednetials: true
 }));
 
-
+// end points
 app.use('/api/users', userRoutes);
 app.use('/api/events', eventRoutes);
 app.use('/api/posts', postRoutes);
