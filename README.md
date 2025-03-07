@@ -23,13 +23,14 @@ npm install
 
 <u>Set up the environment variables:</u>
 Create a .env file in the root directory and add the following (change as needed):
-
+```
 PORT=8081
 DB_HOST=localhost
 DB_PORT=3306
 DB_USER=root
 DB_PASSWORD=root 
 DB_NAME= 'the database you are trying to use'
+```
 
 ## Start the server:
 
