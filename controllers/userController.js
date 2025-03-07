@@ -20,7 +20,7 @@ const createUser = async (req, res) => {
       name,
       username,
       email,
-      password: password,
+      password,
     });
     res.status(201).send({ result: 200, data: newUser });
   } catch (err) {
@@ -41,11 +41,11 @@ const loginUser = async (req, res) => {
     }
 
     // Compare passwords
-    if (!isPasswordValid) {
+    if (user.password !== password) {
       return res.status(401).send({ result: 401, error: "Invalid password" });
     }
 
-    res.send({ result: 200, message: "Login successful", token });
+    res.send({ result: 200, message: "Login successful"});
   } catch (err) {
     console.error(err);
     res.status(500).send({ result: 500, error: err.message });
