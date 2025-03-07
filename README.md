@@ -8,9 +8,6 @@ PlayRVA is a Node.js and Express-based back-end application that provides API se
 - Express - Web framework for Node.js
 - MySQL - Relational database
 - Sequelize - ORM for database management
-- bcrypt - Password hashing
-- jsonwebtoken - Authentication with JWT
-- cors - Cross-origin resource sharing
 - dotenv - Environment variable management
 
 ## Installation
@@ -33,7 +30,6 @@ DB_PORT=3306
 DB_USER=root
 DB_PASSWORD=root 
 DB_NAME= 'the database you are trying to use'
-JWT_SECRET=your_jwt_secret_key
 
 ## Start the server:
 
